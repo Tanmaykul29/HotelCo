@@ -1,38 +1,22 @@
-# HotelCo - A Hotel Booking Website Application
-## Stack:
-### Front:
-- HTML5 & CSS <br>
-- Javascript <br>
-- Django templates <br>
-### Back:
-- Python v. 3.9 <br>
-- Django v. 3.1.5 <br>
-## Installation:
-### Setup:
-Inside folder /HotelCo_project, on your terminal of choice, execute the following:
+# Distinctiveness and Complexity
+## Why you believe your project satisfies the distinctiveness and complexity requirements, mentioned above.
 
-python manage.py makemigrations in order to generate the necessary files for the database setup;
-python manage.py migrate to execute the previous setup files created;
-python manage.py runserver to run the server.
-As per default, the server adress is http://127.0.0.1:8000/.
+The project was made from scratch, based on an original idea, following the requirements and trying to implement all methods learned through the lectures and problem sets.The basic idea is to implement an application to maintain a fully functional Hotel Booking Website which enables the user to book hotels according the his preference.Chain of Hotels are available globally and rooms can be booked by date, location, cost, luxury and rating of the hotel.This project is significantly different from other projects implemented in the course.It is complex in terms of relational database and functionality provided.
 
-Setup Django's deafult admin interface (optional):
-In order to access the administrative interface via /admin, it is necessary to creat an administrative user.
+# What’s contained in each file you created.
 
-To do that, inside /HotelCo_project execute python manage.py createsuperuser and follow the instructions.
-## Requirement:
-#### Your web application must utilize Django (including at least one model) on the back-end and JavaScript on the front-end.
-Fulfilled the requirement the project has 4 django models and also 2 javascript files in the static folder
-#### Your web application must be mobile-responsive.
- Fulfilled the requirement the project has is mobile responsive
+  - `/HotelCo/hotel/static` contains all javascript and css files.
 
----------------
+  - `/HotelCo/hotel/templates/hotel` contains all .html files.
 
-## Features:
+All files created and used in the project are described in the [Features](#features) section, with the exception of the following, used more generally:
 
-### Page routes:
+  - `hotells.js` used to add javascript functionality to add to the user interface.
 
-#### / (home page)
+  - `style.css` used to store all the css specifications.
+
+  - `script.js` used to add javascript functionality to add to the user interface.
+### / (home page)
 Allows movies to be searched by their title.
 
 Utilizes javascript to dynamically show the queried search after 500 milliseconds of text being typed.
@@ -42,26 +26,26 @@ Specific files for this page are: (this section title will be hidden for the fea
 - hotells.js
 - index.html
 ---------------
-#### `/register`
+### `/register`
 
 This helps the user to register with the Hotel Booking Application so that the user can login in and do hotel booking.
 
 - `register.html`
 
 ---------------
-#### `/login`
+### `/login`
 
 Allows the user to login in and enable the user to book hotel rooms
 
 - `login.html`
 
 ---------------
-#### `/logout`
+### `/logout`
 
 Allows the user to logout from the hotel booking web application
 
 ---------------
-#### `/option`
+### `/option`
 
 Displays the top 50 Hotels to the user according to the Check-in and Check-out date and also on the basis on the city
 <br>
@@ -73,21 +57,21 @@ We provide with 3 options for booking a hotel:
 - `option.html`
 
 ---------------
-#### `/focus`
+### `/focus`
 
 Shows 3 options for the selected hotel 
 
 - `focus.html`
 
 ---------------
-#### `/focus/<id>`
+### `/focus/<id>`
 
 This is a Hotel focused room which is the last step inorder to book a hotel. On clicking the book button we get an alert and room is booked.
 
 - `focus.html`
 
 ---------------
-#### `/booking`
+### `/booking`
 
 Displays a list of all of the user's booking.
 
@@ -115,19 +99,19 @@ The url patterns used in this project are:
 ---------------
 ### User Authentication:
 
-#### `/login`
+### `/login`
 
 Displays a page for the login of registered users.
 
 - `login.html`
 
 ---------------
-#### `/logout`
+### `/logout`
 
 Allows logged in users to log out.
 
 ---------------
-#### `/register`
+### `/register`
 
 Allows the registration of new users. 
 
@@ -137,34 +121,31 @@ Allows the registration of new users.
 
 &nbsp;
 
-# CS50W Capstone project requirements:
-
-&nbsp;
-
-## Distinctiveness and Complexity
-### Why you believe your project satisfies the distinctiveness and complexity requirements, mentioned above.
-
-The project was made from scratch, based on an original idea, following the requirements and trying to implement all methods learned through the lectures and problem sets.
-
-## What’s contained in each file you created.
-
-  - `/HotelCo/hotel/static` contains all javascript and css files.
-
-  - `/HotelCo/hotel/templates/hotel` contains all .html files.
-
-All files created and used in the project are described in the [Features](#features) section, with the exception of the following, used more generally:
-
-  - `hotells.js` used to add javascript functionality to add to the user interface.
-
-  - `style.css` used to store all the css specifications.
-
-  - `script.js` used to add javascript functionality to add to the user interface.
-
-## How to run your application.
+# How to run your application.
 
 Described in [Instalation](#instalation) section.
+### Front:
+- HTML5 & CSS <br>
+- Javascript <br>
+- Django templates <br>
+### Back:
+- Python v. 3.9 <br>
+- Django v. 3.1.5 <br>
+## Installation:
+### Setup:
+Inside folder /HotelCo_project, on your terminal of choice, execute the following:
 
-## Any other additional information the staff should know about your project.
+python manage.py makemigrations in order to generate the necessary files for the database setup;
+python manage.py migrate to execute the previous setup files created;
+python manage.py runserver to run the server.
+As per default, the server adress is http://127.0.0.1:8000/.
+
+Setup Django's deafult admin interface (optional):
+In order to access the administrative interface via /admin, it is necessary to creat an administrative user.
+
+To do that, inside /HotelCo_project execute python manage.py createsuperuser and follow the instructions.
+
+# Any other additional information the staff should know about your project.
 Some observations:
 - The project allows (and requires, initially) manually book hotel room to it's database.
 - `models.py` allows to implement:
@@ -179,3 +160,5 @@ Some observations:
 <br>
 <br>
 To change it's default values, it is needed to access Django's admin interface via /admin.
+
+
